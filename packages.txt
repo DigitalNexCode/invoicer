@@ -1,0 +1,33 @@
+Here's a list of all the dependencies used in this project:
+
+1. Next.js (core framework)
+2. React
+3. React DOM
+4. TypeScript
+5. @types/react
+6. @types/node
+7. @supabase/supabase-js (for Supabase integration)
+8. @hookform/resolvers (for form validation)
+9. zod (for schema validation)
+10. react-hook-form (for form handling)
+11. @radix-ui/react-slot (for component composition)
+12. @radix-ui/react-label (for accessible form labels)
+13. class-variance-authority (for dynamic class names)
+14. clsx (for conditional class names)
+15. lucide-react (for icons)
+16. tailwindcss (for styling)
+17. autoprefixer (for CSS compatibility)
+18. postcss (for CSS processing)
+19. @types/pdfkit (TypeScript types for PDFKit)
+20. pdfkit (for PDF generation)
+21. html2canvas (for converting HTML to canvas)
+22. jspdf (for client-side PDF generation)
+23. date-fns (for date formatting and manipulation)
+24. @radix-ui/react-dialog (for modal dialogs)
+25. @radix-ui/react-select (for select inputs)
+26. @radix-ui/react-checkbox (for checkbox inputs)
+27. @radix-ui/react-tabs (for tabbed interfaces)
+28. @radix-ui/react-toast (for toast notifications)
+29. tailwind-merge (for merging Tailwind classes)
+30. @radix-ui/react-avatar (for user avatars)
+31. recharts (for charts and graphs)
