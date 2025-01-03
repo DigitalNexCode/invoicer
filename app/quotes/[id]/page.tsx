@@ -2,7 +2,6 @@
 
 import { useEffect, useState, use, useRef } from 'react'
 import { useRouter } from 'next/navigation'
-import { createClient } from '@supabase/supabase-js'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { QuotePreview } from '@/components/quote-preview'
@@ -12,15 +11,7 @@ import { toast } from "@/components/ui/use-toast"
 import { Download } from 'lucide-react'
 import html2canvas from 'html2canvas'
 import jsPDF from 'jspdf'
-
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
-const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || '';
-
-if (!supabaseUrl || !supabaseKey) {
-  throw new Error('Supabase URL or Key is not set in environment variables');
-}
-
-export const supabase = createClient(supabaseUrl, supabaseKey);
+import { supabase } from '@/lib/supabase-client'
 
 export default function QuoteViewPage({ params }: { params: Promise<{ id: string }> }) {
   const resolvedParams = use(params)
